@@ -1,0 +1,134 @@
+// variabalse
+//font-family: 'Roboto', sans-serif;
+$themeColor: #ff6e30;
+$bodyBg: #1e252b;
+$titlecolor: rgba(255, 255, 255, 0.9);
+$text: rgba(255, 255, 255, 0.55);
+
+// GLOBAL STYLES
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    color: $text;
+    font-weight: 400;
+    background: $bodyBg;
+}
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+h1 {
+    font-size: 3.125rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: $text;
+}
+
+.container{
+    width: 1224px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+//header
+
+.header{
+    padding: 26px 0;
+    font-weight: 600;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+.logo{
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $titlecolor;
+    display: flex;
+    align-items: center;
+        span{
+            display: inline-block;
+            background: $themeColor;
+            border-radius: 8px;
+            margin-right: 12px;
+            padding: 9px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .menu-list{
+        display: flex;
+        font-weight: 500;
+        .menu-item{
+            margin: 0 20px;
+        }
+        .submenu-item{
+            position: relative;
+            &:hover .submenu{
+                transform: scaleX(1);
+            }
+            &::after{
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-left: 9px;
+                border-right: 2px solid $text;
+                border-bottom: 2px solid $text;
+                border-radius: 1px;
+                transform: rotate(45deg);
+                position: relative;
+                top: -3px;
+            }
+        }
+        .submenu{
+
+            width: 100%;
+            transform: scaleX(0);
+            position: absolute;
+            transition: transform 0.3s;
+            .sub-menu-item{
+                margin: 0;
+            }
+            .menu-link{
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .action-menu{
+        .signup{
+            background: $themeColor;
+            border-radius: 8px;
+            padding: 12px 28px;
+            color: #FDF5FF;
+            margin-left: 40px;
+        }
+    }
