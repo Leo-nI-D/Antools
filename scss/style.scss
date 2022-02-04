@@ -70,6 +70,7 @@ $text: rgba(255, 255, 255, 0.55);
             background-position: center;
             background-size: 25px;
             background-repeat: no-repeat;
+            cursor: pointer;
         }
         .download {
             display: inline-block;
@@ -79,6 +80,13 @@ $text: rgba(255, 255, 255, 0.55);
             padding: 11px 8px 9px;
         }
     }
+}
+
+@mixin button {
+    background: $themeColor;
+    border-radius: 8px;
+    padding: 12px 28px;
+    color: #fdf5ff;
 }
 
 // GLOBAL STYLES
@@ -204,12 +212,11 @@ a {
 }
 
 .action-menu {
-    .signup {
-        background: $themeColor;
-        border-radius: 8px;
-        padding: 12px 28px;
-        color: #fdf5ff;
-        margin-left: 40px;
+    .login {
+        margin-right: 40px;
+    }
+    .signup{
+        @include button;
     }
 }
 
@@ -232,25 +239,28 @@ a {
     top: 11.5px;
 }
 
-.find-more-wraper {
+form {
     display: inline-block;
-    margin-top: 60px;
-    margin-bottom: 110px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background: #283036;
+    padding: 8px 10px 8px 18px;
+    margin: 60px 0 110px;
+    background: url(../img/search.svg) center left 18px /24px no-repeat;
+    background-color: #283036;
     border-radius: 15px;
-    .input-find-more {
-        border: 0;
-        background: #283036;
-    }
-    button {
+    input[type="search"] {
+        background: transparent;
         border: none;
+        padding: 12px 33px;
+        color: $text;
+    }
+    .btn {
         background: $themeColor;
+        border: none;
         border-radius: 8px;
-        padding: 12px 28px;
-        color: #fdf5ff;
-        margin-right: 11px;
+        padding: 12px 36px;
+        margin-left: 40px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #fff;
     }
 }
 
@@ -261,8 +271,8 @@ a {
 // dev-tools
 .dev-tools {
     padding-top: 100px;
-    input:checked + label{
-        background-image: url(../img/Cheked-like.svg)
+    input:checked + label {
+        background-image: url(../img/Cheked-like.svg);
     }
 }
 
@@ -271,6 +281,20 @@ a {
 }
 
 // New-tools
+
+.new-tools {
+    // margin-top: 665px;
+    .text-block {
+        p {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+    }
+    .new-tools__btn {
+        @include button();
+    }
+}
+
 .new-tools-list {
     width: 50%;
     margin-left: auto;

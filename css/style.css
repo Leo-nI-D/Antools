@@ -120,12 +120,14 @@ a {
     .menu-list .submenu .menu-link {
       white-space: nowrap; }
 
+.action-menu .login {
+  margin-right: 40px; }
+
 .action-menu .signup {
   background: #ff6e30;
   border-radius: 8px;
   padding: 12px 28px;
-  color: #fdf5ff;
-  margin-left: 40px; }
+  color: #fdf5ff; }
 
 .wraper {
   display: -webkit-box;
@@ -145,24 +147,27 @@ a {
   color: #ff6e30;
   top: 11.5px; }
 
-.find-more-wraper {
+form {
   display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 110px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background: #283036;
+  padding: 8px 10px 8px 18px;
+  margin: 60px 0 110px;
+  background: url(../img/search.svg) center left 18px/24px no-repeat;
+  background-color: #283036;
   border-radius: 15px; }
-  .find-more-wraper .input-find-more {
-    border: 0;
-    background: #283036; }
-  .find-more-wraper button {
+  form input[type="search"] {
+    background: transparent;
     border: none;
+    padding: 12px 33px;
+    color: rgba(255, 255, 255, 0.55); }
+  form .btn {
     background: #ff6e30;
+    border: none;
     border-radius: 8px;
-    padding: 12px 28px;
-    color: #fdf5ff;
-    margin-right: 11px; }
+    padding: 12px 36px;
+    margin-left: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff; }
 
 .ico-wraper {
   margin: 4px; }
@@ -239,13 +244,24 @@ a {
       background-image: url("../img/Uncheked-like.svg");
       background-position: center;
       background-size: 25px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      cursor: pointer; }
     .tools-list .tools-item__foot .download {
       display: inline-block;
       width: 42px;
       height: 42px;
       border-radius: 8px;
       padding: 11px 8px 9px; }
+
+.new-tools .text-block p {
+  padding-top: 30px;
+  padding-bottom: 60px; }
+
+.new-tools .new-tools__btn {
+  background: #ff6e30;
+  border-radius: 8px;
+  padding: 12px 28px;
+  color: #fdf5ff; }
 
 .new-tools-list {
   width: 50%;
@@ -316,7 +332,8 @@ a {
       background-image: url("../img/Uncheked-like.svg");
       background-position: center;
       background-size: 25px;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      cursor: pointer; }
     .new-tools-list .tools-item__foot .download {
       display: inline-block;
       width: 42px;
