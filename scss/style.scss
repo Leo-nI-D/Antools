@@ -21,9 +21,7 @@ $text: rgba(255, 255, 255, 0.55);
             background: rgba(40, 48, 54, 0.6);
             backdrop-filter: blur(50px);
         }
-        &:hover::after {
-            opacity: 1;
-        }
+
         &::after {
             content: "";
             width: 65px;
@@ -36,6 +34,9 @@ $text: rgba(255, 255, 255, 0.55);
             right: 16px;
             opacity: 0;
             transition: opacity 0.3s;
+        }
+        &:hover::after {
+            opacity: 1;
         }
     }
 
@@ -56,6 +57,7 @@ $text: rgba(255, 255, 255, 0.55);
     .tools-item__foot {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 30px;
         input {
             display: none;
@@ -215,7 +217,7 @@ a {
     .login {
         margin-right: 40px;
     }
-    .signup{
+    .signup {
         @include button;
     }
 }
@@ -246,7 +248,7 @@ form {
     background: url(../img/search.svg) center left 18px /24px no-repeat;
     background-color: #283036;
     border-radius: 15px;
-    input[type="search"] {
+    input[type=search] {
         background: transparent;
         border: none;
         padding: 12px 33px;
@@ -270,9 +272,20 @@ form {
 
 // dev-tools
 .dev-tools {
+    text-align: center;
     padding-top: 100px;
     input:checked + label {
         background-image: url(../img/Cheked-like.svg);
+    }
+    .dev-tools-btn{
+        background: transparent;
+        padding: 17px 38px;
+        color: $themeColor;
+        font-weight: 500;
+        line-height: 1.5;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        cursor: pointer;
     }
 }
 
@@ -283,12 +296,9 @@ form {
 // New-tools
 
 .new-tools {
-    // margin-top: 665px;
-    .text-block {
-        p {
-            padding-top: 30px;
-            padding-bottom: 60px;
-        }
+    .latest-update {
+        padding-top: 30px;
+        padding-bottom: 60px;
     }
     .new-tools__btn {
         @include button();
@@ -299,4 +309,8 @@ form {
     width: 50%;
     margin-left: auto;
     @include tools(calc(50% - 24px), 0 12px 70px);
+}
+
+.new-wraper{
+    display: flex;
 }
