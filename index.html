@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto@1&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -85,7 +87,8 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Most Popular Tools</h2>
-                    <p class="subtitle">Tools for the best Designers and Developers<br> most popularly used in the world</p>
+                    <p class="subtitle">Tools for the best Designers and Developers<br> most popularly used in the world
+                    </p>
                 </div>
                 <ul class="tools-list">
                     <li class="tools-item">
@@ -209,7 +212,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="dev-tools-btn" type="button" >Load more</button>
+                <button class="dev-tools-btn" type="button">Load more</button>
             </div>
         </section>
 
@@ -313,8 +316,96 @@
 
         </section>
 
-    </main>
+        <section class="trusted-more">
+           <div class="container">
+                <h3>Trusted more than 150+ brand</h3>
+                <ul class="brands-list">
+                    <li class="brands-item">
+                        <img src="img/microsoft.svg" class="microsoft" alt="microsoft">
+                        <p>Microsoft</p>
+                    </li>
+                    <li class="brands-item">
+                        <p>Google</p>
+                    </li>
+                    <li class="brands-item">
+                        <img src="img/slack.svg" alt="slack">
+                        <p>slack</p>
+                    </li>
+                    <li class="brands-item">
+                        <img src="img/WordPress.svg" alt="WordPress">
+                        <p>WordPress</p>
+                    </li>
+                </ul>
+           </div>
+        </section>
 
+        <section class="team">
+            <div class="container">
+                <div class="team-slider">
+                    <div class="slide-item">
+                        <div class="team-photo">
+                            <span class="big-circle"></span>
+                            <span class="litle-cicle"></span>
+                            <img src="img/Team-photo.png" alt="member-photo" class="member-photo">
+                            <div class="member-name">
+                                <h3>Ronald Richard</h3>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima, vero enim
+                                voluptatibus vel hic dolorem quidem nostrum magni totam ipsa sed. Ullam eveniet voluptas
+                                nulla modi aspernatur. A, odio.</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="team-photo">
+                            <span class="big-circle"></span>
+                            <span class="litle-cicle"></span>
+                            <img src="img/Team-photo.png" alt="member-photo" class="member-photo">
+                            <div class="member-name">
+                                <h3>Ronald Richard</h3>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima, vero enim
+                                voluptatibus vel hic dolorem quidem nostrum magni totam ipsa sed. Ullam eveniet voluptas
+                                nulla modi aspernatur. A, odio.</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="team-photo">
+                            <span class="big-circle"></span>
+                            <span class="litle-cicle"></span>
+                            <img src="img/Team-photo.png" alt="member-photo" class="member-photo">
+                            <div class="member-name">
+                                <h3>Ronald Richard</h3>
+                                <p>Product Manager</p>
+                            </div>
+                        </div>
+                        <div class="team-desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima, vero enim
+                                voluptatibus vel hic dolorem quidem nostrum magni totam ipsa sed. Ullam eveniet voluptas
+                                nulla modi aspernatur. A, odio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.team-slider').slick({
+                autoplay: false,
+                dots: true,
+                lazyLoad: 'progressive',
+            });
+        });
+    </script>
 </body>
 
 </html>

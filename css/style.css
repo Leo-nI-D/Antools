@@ -154,7 +154,7 @@ form {
   background: url(../img/search.svg) center left 18px/24px no-repeat;
   background-color: #283036;
   border-radius: 15px; }
-  form input[type=search] {
+  form input[type="search"] {
     background: transparent;
     border: none;
     padding: 12px 33px;
@@ -361,3 +361,134 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.trusted-more {
+  text-align: center;
+  background: rgba(44, 53, 61, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 25px;
+  width: 1224px;
+  height: 253px; }
+  .trusted-more .brands-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .trusted-more .brands-list .brands-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: 53.5px;
+      margin-right: 53.5px; }
+
+.brands-item > img {
+  width: 41.18px;
+  height: 41.73px; }
+
+.team {
+  padding-top: 97px;
+  padding-bottom: 100px; }
+  .team .slide-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .team .slide-item > div {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 0 50%;
+              flex: 0 0 0 50%; }
+    .team .slide-item img {
+      margin: 0 auto; }
+  .team .team-photo {
+    position: relative; }
+    .team .team-photo .member-name {
+      position: absolute;
+      bottom: 30px;
+      right: 140px;
+      padding: 10px 22px 15px; }
+  .team .team-desc {
+    padding-right: 145px; }
+
+.big-circle {
+  width: 380px;
+  height: 380px;
+  background: rgba(40, 48, 54, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 50%;
+  position: absolute; }
+  .big-circle::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    left: 37px;
+    background: #b345f1;
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    width: 43px;
+    height: 43px; }
+
+.litle-cicle {
+  position: absolute;
+  left: 37px;
+  top: 37px;
+  width: 305.65px;
+  height: 305.65px;
+  background: rgba(40, 48, 54, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px); }
+  .litle-cicle::after {
+    content: "";
+    background: rgba(255, 110, 48, 0.7);
+    -webkit-filter: blur(80px);
+            filter: blur(80px);
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    right: -5px;
+    bottom: 30px; }
+
+.member-photo {
+  position: relative; }
+
+.member-name {
+  -webkit-transform: scaleY(-20px);
+          transform: scaleY(-20px);
+  background: rgba(40, 48, 54, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  width: 240px;
+  height: 91px;
+  border-radius: 8px 8px 8px 8px;
+  position: relative;
+  overflow: hidden; }
+  .member-name::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background: #007acc;
+    -webkit-filter: blur(13px);
+            filter: blur(13px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }

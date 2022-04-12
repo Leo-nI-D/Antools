@@ -248,7 +248,7 @@ form {
     background: url(../img/search.svg) center left 18px /24px no-repeat;
     background-color: #283036;
     border-radius: 15px;
-    input[type=search] {
+    input[type="search"] {
         background: transparent;
         border: none;
         padding: 12px 33px;
@@ -277,7 +277,7 @@ form {
     input:checked + label {
         background-image: url(../img/Cheked-like.svg);
     }
-    .dev-tools-btn{
+    .dev-tools-btn {
         background: transparent;
         padding: 17px 38px;
         color: $themeColor;
@@ -311,6 +311,131 @@ form {
     @include tools(calc(50% - 24px), 0 12px 70px);
 }
 
-.new-wraper{
+.new-wraper {
     display: flex;
+}
+
+// Trusted more
+.trusted-more {
+    text-align: center;
+    background: rgba(44, 53, 61, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    width: 1224px;
+    height: 253px;
+    .brands-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .brands-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 53.5px;
+            margin-right: 53.5px;
+        }
+    }
+}
+
+.brands-item > img {
+    width: 41.18px;
+    height: 41.73px;
+}
+// TEAM
+
+.team {
+    padding-top: 97px;
+    padding-bottom: 100px;
+    .slide-item {
+        display: flex;
+        align-items: center;
+        & > div {
+            // width: 50%;
+            flex: 0 0 0 50%;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+    .team-photo {
+        position: relative;
+        .member-name {
+            position: absolute;
+            bottom: 30px;
+            right: 140px;
+            padding: 10px 22px 15px;
+        }
+    }
+    .team-desc {
+        padding-right: 145px;
+    }
+}
+
+.big-circle {
+    width: 380px;
+    height: 380px;
+    background: rgba(40, 48, 54, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(50px);
+    border-radius: 50%;
+    position: absolute;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 87px;
+        left: 37px;
+        background: #b345f1;
+        filter: blur(50px);
+        width: 43px;
+        height: 43px;
+    }
+}
+
+.litle-cicle {
+    position: absolute;
+    left: 37px;
+    top: 37px;
+    width: 305.65px;
+    height: 305.65px;
+    background: rgba(40, 48, 54, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    backdrop-filter: blur(50px);
+    &::after {
+        content: "";
+        background: rgba(255, 110, 48, 0.7);
+        filter: blur(80px);
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        right: -5px;
+        bottom: 30px;
+    }
+}
+
+.member-photo {
+    position: relative;
+}
+
+.member-name {
+    transform: scaleY(-20px);
+    background: rgba(40, 48, 54, 0.2);
+    backdrop-filter: blur(50px);
+    width: 240px;
+    height: 91px;
+    border-radius: 8px 8px 8px 8px;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: "";
+        width: 23px;
+        height: 23px;
+        background: #007acc;
+        filter: blur(13px);
+        border-radius: 50%;
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        transition: opacity 0.3s;
+    }
 }
